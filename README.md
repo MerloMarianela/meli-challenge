@@ -13,33 +13,30 @@
 - JS - React
 - Css -Sass
 
-
- Clonar repositorio: git@github.com:MerloMarianela/meli-challenge.git
- Entrar al repositorio ---> cd meli-challenge
+Clonar repositorio: git@github.com:MerloMarianela/meli-challenge.git
+Entrar al repositorio ---> cd meli-challenge
 
 ## Configuración del proyecto
 
 ### Instalar dependencias
 
 Luego de haber clonado el repositorio situarse en
-  - api 
+
+- api
   > npm i
-  - cli 
- > npm i
-  
+- cli
+  > npm i
+
 ## Levantar la aplicación
 
-### Levanar el server
+### Levantar server
 
 > node index.js
 
 ### Levanar client
 
-
 > npm start
 
-
-
 ### Demo:
-https://user-images.githubusercontent.com/71108973/178907068-f36a7c5b-6fc5-4f24-89b5-8c26d2a029a5.mp4
 
+https://user-images.githubusercontent.com/71108973/178907068-f36a7c5b-6fc5-4f24-89b5-8c26d2a029a5.mp4
