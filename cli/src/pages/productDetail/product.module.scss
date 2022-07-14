@@ -1,0 +1,140 @@
+@import "../../styles/variables";
+
+.productContainer {
+  padding: $spacer-32;
+
+  .flexContainer {
+    display: flex;
+  }
+
+  .product__image {
+    flex: 0 1 680px;
+    max-height: 680px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .product__info {
+    flex: 1 0 300px;
+    margin-left: $spacer-16;
+  }
+
+  .product__condition {
+    font-size: $font-14;
+  }
+
+  .product__title {
+    margin-top: $spacer-16;
+    font-size: $font-24;
+  }
+
+  .product__price {
+    font-size: $font-46;
+    margin: $spacer-32 0;
+    white-space: nowrap;
+
+    span {
+      display: inline-block;
+      padding-top: 0.25em;
+      padding-left: 0.25em;
+      vertical-align: top;
+      font-size: $font-24;
+    }
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .product__description {
+    margin-top: $spacer-32 * 2;
+    max-width: 70ch;
+
+    h3 {
+      color: $dark-gray;
+      font-size: $font-28;
+      margin-bottom: $spacer-32;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+
+    .product__image {
+      flex: 0;
+      margin-bottom: $spacer-32;
+    }
+
+    .product__info {
+      flex: 0;
+      margin-left: 0;
+    }
+
+    .product__price {
+      margin: $spacer-16;
+    }
+
+    .product__description {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .product__title {
+      font-size: $font-18;
+      line-height: 1.5;
+    }
+
+    .product__price {
+      font-size: $font-28;
+
+      span {
+        font-size: $font-16;
+      }
+    }
+
+    .product__description h3 {
+      font-size: $font-24;
+      margin-bottom: $spacer-16;
+    }
+  }
+}
+
+.button {
+  background-color: $blue;
+  border: 0;
+  border-radius: 4px;
+  padding: $spacer-16;
+  color: $white;
+  font-family: inherit;
+  line-height: 1;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+
+  &:hover {
+    background-color: darken($blue, 10%);
+  }
+
+  &:active {
+    background-color: darken($blue, 20%);
+  }
+
+  &[disabled] {
+    background-color: $soft-gray;
+    color: $gray;
+    cursor: not-allowed;
+  }
+}
+
+.p {
+  font-size: $font-16;
+  color: $medium-gray;
+
+  & + & {
+    margin-top: 1.5em;
+  }
+}
